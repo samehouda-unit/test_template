@@ -299,7 +299,7 @@ class _SideNavWidgetState extends State<SideNavWidget>
                             height: 44.0,
                             decoration: BoxDecoration(
                               color: () {
-                                if (_model.mouseRegionHovered1!) {
+                                if (_model.mouseRegionHovered1) {
                                   return FlutterFlowTheme.of(context)
                                       .secondaryBackground;
                                 } else if (widget.selectedNav == 1) {
@@ -382,7 +382,7 @@ class _SideNavWidgetState extends State<SideNavWidget>
                             height: 44.0,
                             decoration: BoxDecoration(
                               color: () {
-                                if (_model.mouseRegionHovered2!) {
+                                if (_model.mouseRegionHovered2) {
                                   return FlutterFlowTheme.of(context)
                                       .secondaryBackground;
                                 } else if (widget.selectedNav == 2) {
@@ -465,7 +465,7 @@ class _SideNavWidgetState extends State<SideNavWidget>
                             height: 44.0,
                             decoration: BoxDecoration(
                               color: () {
-                                if (_model.mouseRegionHovered3!) {
+                                if (_model.mouseRegionHovered3) {
                                   return FlutterFlowTheme.of(context)
                                       .secondaryBackground;
                                 } else if (widget.selectedNav == 3) {
@@ -585,7 +585,7 @@ class _SideNavWidgetState extends State<SideNavWidget>
                             height: 44.0,
                             decoration: BoxDecoration(
                               color: () {
-                                if (_model.mouseRegionHovered4!) {
+                                if (_model.mouseRegionHovered4) {
                                   return FlutterFlowTheme.of(context)
                                       .secondaryBackground;
                                 } else if (widget.selectedNav == 4) {
@@ -682,7 +682,7 @@ class _SideNavWidgetState extends State<SideNavWidget>
                             height: 44.0,
                             decoration: BoxDecoration(
                               color: () {
-                                if (_model.mouseRegionHovered5!) {
+                                if (_model.mouseRegionHovered5) {
                                   return FlutterFlowTheme.of(context)
                                       .secondaryBackground;
                                 } else if (widget.selectedNav == 5) {
