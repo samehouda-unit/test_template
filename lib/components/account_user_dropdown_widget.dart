@@ -244,7 +244,8 @@ class _AccountUserDropdownWidgetState extends State<AccountUserDropdownWidget>
                         curve: Curves.easeInOut,
                         width: double.infinity,
                         decoration: BoxDecoration(
-                          color: _model.mouseRegionHovered1? FlutterFlowTheme.of(context).primaryBackground
+                          color: _model.mouseRegionHovered1!
+                              ? FlutterFlowTheme.of(context).primaryBackground
                               : FlutterFlowTheme.of(context)
                                   .secondaryBackground,
                           borderRadius: BorderRadius.circular(8.0),
@@ -299,7 +300,8 @@ class _AccountUserDropdownWidgetState extends State<AccountUserDropdownWidget>
                         curve: Curves.easeInOut,
                         width: double.infinity,
                         decoration: BoxDecoration(
-                          color: _model.mouseRegionHovered2? FlutterFlowTheme.of(context).primaryBackground
+                          color: _model.mouseRegionHovered2!
+                              ? FlutterFlowTheme.of(context).primaryBackground
                               : FlutterFlowTheme.of(context)
                                   .secondaryBackground,
                           borderRadius: BorderRadius.circular(8.0),
@@ -354,7 +356,8 @@ class _AccountUserDropdownWidgetState extends State<AccountUserDropdownWidget>
                         curve: Curves.easeInOut,
                         width: double.infinity,
                         decoration: BoxDecoration(
-                          color: _model.mouseRegionHovered3? FlutterFlowTheme.of(context).primaryBackground
+                          color: _model.mouseRegionHovered3!
+                              ? FlutterFlowTheme.of(context).primaryBackground
                               : FlutterFlowTheme.of(context)
                                   .secondaryBackground,
                           borderRadius: BorderRadius.circular(8.0),
@@ -596,7 +599,8 @@ class _AccountUserDropdownWidgetState extends State<AccountUserDropdownWidget>
                         curve: Curves.easeInOut,
                         width: double.infinity,
                         decoration: BoxDecoration(
-                          color: _model.mouseRegionHovered4? FlutterFlowTheme.of(context).primaryBackground
+                          color: _model.mouseRegionHovered4!
+                              ? FlutterFlowTheme.of(context).primaryBackground
                               : FlutterFlowTheme.of(context)
                                   .secondaryBackground,
                           borderRadius: BorderRadius.circular(8.0),
