@@ -1,4 +1,4 @@
-# Test-Template
+# Egypt-SquashPlatform
 
 A new Flutter project.
 
