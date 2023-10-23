@@ -134,7 +134,7 @@ class NavBarPage extends StatefulWidget {
 
 /// This is the private State class that goes with NavBarPage.
 class _NavBarPageState extends State<NavBarPage> {
-  String _currentPageName = 'main_Dashboard';
+  String _currentPageName = 'main_notifications';
   late Widget? _currentPage;
 
   @override
@@ -147,11 +147,12 @@ class _NavBarPageState extends State<NavBarPage> {
   @override
   Widget build(BuildContext context) {
     final tabs = {
-      'main_Dashboard': MainDashboardWidget(),
-      'main_users': MainUsersWidget(),
       'main_notifications': MainNotificationsWidget(),
+      'main_users': MainUsersWidget(),
       'main_recent': MainRecentWidget(),
       'main_Profile': MainProfileWidget(),
+      'main_Dashboard': MainDashboardWidget(),
+      'main_Admin': MainAdminWidget(),
     };
     final currentIndex = tabs.keys.toList().indexOf(_currentPageName);
 
@@ -178,10 +179,10 @@ class _NavBarPageState extends State<NavBarPage> {
           items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: Icon(
-                Icons.space_dashboard,
+                Icons.notifications_rounded,
                 size: 24.0,
               ),
-              label: '__',
+              label: '--',
               tooltip: '',
             ),
             BottomNavigationBarItem(
@@ -190,14 +191,6 @@ class _NavBarPageState extends State<NavBarPage> {
                 size: 24.0,
               ),
               label: '__',
-              tooltip: '',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.notifications_rounded,
-                size: 24.0,
-              ),
-              label: '--',
               tooltip: '',
             ),
             BottomNavigationBarItem(
@@ -211,6 +204,26 @@ class _NavBarPageState extends State<NavBarPage> {
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.account_circle_outlined,
+                size: 24.0,
+              ),
+              label: '__',
+              tooltip: '',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.space_dashboard,
+                size: 24.0,
+              ),
+              label: '__',
+              tooltip: '',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.admin_panel_settings_rounded,
+                size: 24.0,
+              ),
+              activeIcon: Icon(
+                Icons.admin_panel_settings_outlined,
                 size: 24.0,
               ),
               label: '__',

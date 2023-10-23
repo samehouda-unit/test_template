@@ -11,3 +11,4 @@ export '/pages/transaction_history/transaction_history_widget.dart'
 export '/responsive_profile/responsive_profile_widget.dart'
     show ResponsiveProfileWidget;
 export '/responsive_test/responsive_test_widget.dart' show ResponsiveTestWidget;
+export '/pages/main_admin/main_admin_widget.dart' show MainAdminWidget;

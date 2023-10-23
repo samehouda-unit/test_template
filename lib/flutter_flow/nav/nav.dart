@@ -112,6 +112,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'responsive_Test',
           path: '/responsiveTest',
           builder: (context, params) => ResponsiveTestWidget(),
+        ),
+        FFRoute(
+          name: 'main_Admin',
+          path: '/mainAdmin',
+          builder: (context, params) => params.isEmpty
+              ? NavBarPage(initialPage: 'main_Admin')
+              : MainAdminWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
