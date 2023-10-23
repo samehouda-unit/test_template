@@ -150,8 +150,8 @@ class _NavBarPageState extends State<NavBarPage> {
       'main_notifications': MainNotificationsWidget(),
       'main_users': MainUsersWidget(),
       'main_recent': MainRecentWidget(),
-      'main_Profile': MainProfileWidget(),
       'main_Dashboard': MainDashboardWidget(),
+      'main_Profile': MainProfileWidget(),
       'main_Admin': MainAdminWidget(),
     };
     final currentIndex = tabs.keys.toList().indexOf(_currentPageName);
@@ -203,7 +203,7 @@ class _NavBarPageState extends State<NavBarPage> {
             ),
             BottomNavigationBarItem(
               icon: Icon(
-                Icons.account_circle_outlined,
+                Icons.space_dashboard,
                 size: 24.0,
               ),
               label: '__',
@@ -211,7 +211,7 @@ class _NavBarPageState extends State<NavBarPage> {
             ),
             BottomNavigationBarItem(
               icon: Icon(
-                Icons.space_dashboard,
+                Icons.account_circle_outlined,
                 size: 24.0,
               ),
               label: '__',
