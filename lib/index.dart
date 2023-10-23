@@ -12,3 +12,5 @@ export '/responsive_profile/responsive_profile_widget.dart'
     show ResponsiveProfileWidget;
 export '/responsive_test/responsive_test_widget.dart' show ResponsiveTestWidget;
 export '/pages/main_admin/main_admin_widget.dart' show MainAdminWidget;
+export '/create_player_page/create_player_page_widget.dart'
+    show CreatePlayerPageWidget;

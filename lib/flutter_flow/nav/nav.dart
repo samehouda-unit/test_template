@@ -119,6 +119,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => params.isEmpty
               ? NavBarPage(initialPage: 'main_Admin')
               : MainAdminWidget(),
+        ),
+        FFRoute(
+          name: 'CreatePlayerPage',
+          path: '/createPlayerPage',
+          builder: (context, params) => CreatePlayerPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
