@@ -1,4 +1,6 @@
+import '/components/actions_clubs_widget.dart';
 import '/components/actions_player_widget.dart';
+import '/components/actions_tournaments_widget.dart';
 import '/components/side_nav_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -130,7 +132,7 @@ class _MainAdminWidgetState extends State<MainAdminWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 16.0, 4.0, 0.0, 0.0),
                             child: Text(
-                              'Below is an overview of your project.',
+                              'Below is an overview of your Squash platform',
                               style: FlutterFlowTheme.of(context).labelMedium,
                             ),
                           ),
@@ -536,143 +538,178 @@ class _MainAdminWidgetState extends State<MainAdminWidget> {
                                 ),
                                 Row(
                                   mainAxisSize: MainAxisSize.max,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
-                                    Flexible(
-                                      flex: 6,
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 0.0, 16.0, 0.0),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          children: [
-                                            Container(
-                                              width: double.infinity,
-                                              height: 120.0,
-                                              constraints: BoxConstraints(
-                                                maxWidth: () {
-                                                  if (MediaQuery.sizeOf(context)
-                                                          .width <
-                                                      kBreakpointSmall) {
-                                                    return 700.0;
-                                                  } else if (MediaQuery.sizeOf(
-                                                              context)
-                                                          .width <
-                                                      kBreakpointMedium) {
-                                                    return 900.0;
-                                                  } else if (MediaQuery.sizeOf(
-                                                              context)
-                                                          .width <
-                                                      kBreakpointLarge) {
-                                                    return 900.0;
-                                                  } else {
-                                                    return 1000.0;
-                                                  }
-                                                }(),
-                                              ),
-                                              decoration: BoxDecoration(
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .secondaryBackground,
-                                                borderRadius:
-                                                    BorderRadius.circular(8.0),
-                                                border: Border.all(
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .alternate,
-                                                  width: 1.0,
-                                                ),
-                                              ),
-                                              child: Padding(
-                                                padding: EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        16.0, 0.0, 16.0, 0.0),
-                                                child: Row(
+                                    Expanded(
+                                      child: Container(
+                                        width: double.infinity,
+                                        height: 120.0,
+                                        constraints: BoxConstraints(
+                                          maxWidth: () {
+                                            if (MediaQuery.sizeOf(context)
+                                                    .width <
+                                                kBreakpointSmall) {
+                                              return 700.0;
+                                            } else if (MediaQuery.sizeOf(
+                                                        context)
+                                                    .width <
+                                                kBreakpointMedium) {
+                                              return 900.0;
+                                            } else if (MediaQuery.sizeOf(
+                                                        context)
+                                                    .width <
+                                                kBreakpointLarge) {
+                                              return 900.0;
+                                            } else {
+                                              return 1000.0;
+                                            }
+                                          }(),
+                                        ),
+                                        decoration: BoxDecoration(
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryBackground,
+                                          borderRadius:
+                                              BorderRadius.circular(8.0),
+                                          border: Border.all(
+                                            color: FlutterFlowTheme.of(context)
+                                                .alternate,
+                                            width: 1.0,
+                                          ),
+                                        ),
+                                        child: Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  16.0, 0.0, 16.0, 0.0),
+                                          child: Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            children: [
+                                              Expanded(
+                                                child: Column(
                                                   mainAxisSize:
                                                       MainAxisSize.max,
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment.center,
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.start,
                                                   children: [
-                                                    Expanded(
-                                                      child: Column(
-                                                        mainAxisSize:
-                                                            MainAxisSize.max,
-                                                        mainAxisAlignment:
-                                                            MainAxisAlignment
-                                                                .center,
-                                                        crossAxisAlignment:
-                                                            CrossAxisAlignment
-                                                                .start,
-                                                        children: [
-                                                          Text(
-                                                            'Players in Tournaments',
+                                                    Text(
+                                                      'Players in Tournaments',
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .labelMedium,
+                                                    ),
+                                                    Row(
+                                                      mainAxisSize:
+                                                          MainAxisSize.max,
+                                                      children: [
+                                                        Padding(
+                                                          padding:
+                                                              EdgeInsetsDirectional
+                                                                  .fromSTEB(
+                                                                      0.0,
+                                                                      8.0,
+                                                                      4.0,
+                                                                      0.0),
+                                                          child: Text(
+                                                            '1900',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
-                                                                .labelMedium,
+                                                                .displayMedium,
                                                           ),
-                                                          Row(
-                                                            mainAxisSize:
-                                                                MainAxisSize
-                                                                    .max,
-                                                            children: [
-                                                              Padding(
-                                                                padding:
-                                                                    EdgeInsetsDirectional
-                                                                        .fromSTEB(
-                                                                            0.0,
-                                                                            8.0,
-                                                                            4.0,
-                                                                            0.0),
-                                                                child: Text(
-                                                                  '1900',
-                                                                  style: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .displayMedium,
-                                                                ),
-                                                              ),
-                                                            ],
-                                                          ),
-                                                        ],
-                                                      ),
-                                                    ),
-                                                    CircularPercentIndicator(
-                                                      percent: 0.55,
-                                                      radius: 45.0,
-                                                      lineWidth: 8.0,
-                                                      animation: true,
-                                                      animateFromLastPercent:
-                                                          true,
-                                                      progressColor:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .primary,
-                                                      backgroundColor:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .accent1,
-                                                      center: Text(
-                                                        '55%',
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .headlineMedium,
-                                                      ),
+                                                        ),
+                                                      ],
                                                     ),
                                                   ],
                                                 ),
                                               ),
-                                            ),
-                                          ].divide(SizedBox(height: 16.0)),
+                                              CircularPercentIndicator(
+                                                percent: 0.55,
+                                                radius: 45.0,
+                                                lineWidth: 8.0,
+                                                animation: true,
+                                                animateFromLastPercent: true,
+                                                progressColor:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primary,
+                                                backgroundColor:
+                                                    FlutterFlowTheme.of(context)
+                                                        .accent1,
+                                                center: Text(
+                                                  '55%',
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .headlineMedium,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
                                         ),
                                       ),
                                     ),
-                                  ].addToStart(SizedBox(width: 16.0)),
+                                  ]
+                                      .divide(SizedBox(width: 16.0))
+                                      .addToStart(SizedBox(width: 16.0))
+                                      .addToEnd(SizedBox(width: 16.0)),
                                 ),
                               ].addToEnd(SizedBox(height: 24.0)),
                             ),
                           ),
-                          wrapWithModel(
-                            model: _model.actionsPlayerModel,
-                            updateCallback: () => setState(() {}),
-                            child: ActionsPlayerWidget(),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: FlutterFlowTheme.of(context)
+                                  .secondaryBackground,
+                              boxShadow: [
+                                BoxShadow(
+                                  blurRadius: 4.0,
+                                  color: Color(0x33000000),
+                                  offset: Offset(0.0, 2.0),
+                                )
+                              ],
+                            ),
+                            child: wrapWithModel(
+                              model: _model.actionsPlayerModel,
+                              updateCallback: () => setState(() {}),
+                              child: ActionsPlayerWidget(),
+                            ),
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: FlutterFlowTheme.of(context)
+                                  .secondaryBackground,
+                              boxShadow: [
+                                BoxShadow(
+                                  blurRadius: 4.0,
+                                  color: Color(0x33000000),
+                                  offset: Offset(0.0, 2.0),
+                                )
+                              ],
+                            ),
+                            child: wrapWithModel(
+                              model: _model.actionsClubsModel,
+                              updateCallback: () => setState(() {}),
+                              child: ActionsClubsWidget(),
+                            ),
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: FlutterFlowTheme.of(context)
+                                  .secondaryBackground,
+                              boxShadow: [
+                                BoxShadow(
+                                  blurRadius: 4.0,
+                                  color: Color(0x33000000),
+                                  offset: Offset(0.0, 2.0),
+                                )
+                              ],
+                            ),
+                            child: wrapWithModel(
+                              model: _model.actionsTournamentsModel,
+                              updateCallback: () => setState(() {}),
+                              child: ActionsTournamentsWidget(),
+                            ),
                           ),
                         ].addToEnd(SizedBox(height: 32.0)),
                       ),
