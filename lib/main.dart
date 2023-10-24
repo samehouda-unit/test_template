@@ -148,9 +148,9 @@ class _NavBarPageState extends State<NavBarPage> {
   Widget build(BuildContext context) {
     final tabs = {
       'main_notifications': MainNotificationsWidget(),
+      'main_Dashboard': MainDashboardWidget(),
       'main_users': MainUsersWidget(),
       'main_recent': MainRecentWidget(),
-      'main_Dashboard': MainDashboardWidget(),
       'main_Profile': MainProfileWidget(),
       'main_Admin': MainAdminWidget(),
     };
@@ -187,6 +187,14 @@ class _NavBarPageState extends State<NavBarPage> {
             ),
             BottomNavigationBarItem(
               icon: Icon(
+                Icons.space_dashboard,
+                size: 24.0,
+              ),
+              label: '__',
+              tooltip: '',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(
                 Icons.groups_sharp,
                 size: 24.0,
               ),
@@ -196,14 +204,6 @@ class _NavBarPageState extends State<NavBarPage> {
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.receipt_outlined,
-                size: 24.0,
-              ),
-              label: '__',
-              tooltip: '',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.space_dashboard,
                 size: 24.0,
               ),
               label: '__',

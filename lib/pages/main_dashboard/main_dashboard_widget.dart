@@ -3,7 +3,6 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -114,7 +113,7 @@ class _MainDashboardWidgetState extends State<MainDashboardWidget> {
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       2.0, 0.0, 0.0, 0.0),
                                   child: Text(
-                                    'Andrew',
+                                    'PlayerName',
                                     style: FlutterFlowTheme.of(context)
                                         .headlineMedium
                                         .override(
@@ -131,7 +130,7 @@ class _MainDashboardWidgetState extends State<MainDashboardWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 16.0, 4.0, 0.0, 0.0),
                             child: Text(
-                              'Below is an overview of your project.',
+                              'Below is an overview of your results',
                               style: FlutterFlowTheme.of(context).labelMedium,
                             ),
                           ),
@@ -209,7 +208,7 @@ class _MainDashboardWidgetState extends State<MainDashboardWidget> {
                                                                 .start,
                                                         children: [
                                                           Text(
-                                                            'Income this Month',
+                                                            'Current ranking',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .labelMedium,
@@ -228,7 +227,7 @@ class _MainDashboardWidgetState extends State<MainDashboardWidget> {
                                                                           4.0,
                                                                           0.0),
                                                                   child: Text(
-                                                                    '\$567,402',
+                                                                    '8',
                                                                     style: FlutterFlowTheme.of(
                                                                             context)
                                                                         .displaySmall,
@@ -284,7 +283,7 @@ class _MainDashboardWidgetState extends State<MainDashboardWidget> {
                                                                   20.0,
                                                                   0.0),
                                                       child: Icon(
-                                                        Icons.receipt_outlined,
+                                                        Icons.flag,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -304,7 +303,7 @@ class _MainDashboardWidgetState extends State<MainDashboardWidget> {
                                                                 .start,
                                                         children: [
                                                           Text(
-                                                            'Total Orders',
+                                                            'Number of Tournaments',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .labelMedium,
@@ -323,7 +322,7 @@ class _MainDashboardWidgetState extends State<MainDashboardWidget> {
                                                                             4.0,
                                                                             0.0),
                                                                 child: Text(
-                                                                  '2,208',
+                                                                  '40',
                                                                   style: FlutterFlowTheme.of(
                                                                           context)
                                                                       .displaySmall,
@@ -378,8 +377,7 @@ class _MainDashboardWidgetState extends State<MainDashboardWidget> {
                                                                   20.0,
                                                                   0.0),
                                                       child: Icon(
-                                                        Icons
-                                                            .group_add_outlined,
+                                                        Icons.pin,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -399,7 +397,7 @@ class _MainDashboardWidgetState extends State<MainDashboardWidget> {
                                                                 .start,
                                                         children: [
                                                           Text(
-                                                            'New Customers',
+                                                            'Total points',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .labelMedium,
@@ -418,7 +416,7 @@ class _MainDashboardWidgetState extends State<MainDashboardWidget> {
                                                                             4.0,
                                                                             0.0),
                                                                 child: Text(
-                                                                  '1,402',
+                                                                  '1402',
                                                                   style: FlutterFlowTheme.of(
                                                                           context)
                                                                       .displaySmall,
@@ -473,7 +471,7 @@ class _MainDashboardWidgetState extends State<MainDashboardWidget> {
                                                                   20.0,
                                                                   0.0),
                                                       child: Icon(
-                                                        Icons.refresh_rounded,
+                                                        Icons.star_half,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -493,7 +491,7 @@ class _MainDashboardWidgetState extends State<MainDashboardWidget> {
                                                                 .start,
                                                         children: [
                                                           Text(
-                                                            'Returning Customers',
+                                                            'Total number of matches',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .labelMedium,
@@ -605,7 +603,7 @@ class _MainDashboardWidgetState extends State<MainDashboardWidget> {
                                                                 .start,
                                                         children: [
                                                           Text(
-                                                            'Outstanding Balance',
+                                                            'Performance | Won Challenges',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .labelMedium,
@@ -624,7 +622,7 @@ class _MainDashboardWidgetState extends State<MainDashboardWidget> {
                                                                             4.0,
                                                                             0.0),
                                                                 child: Text(
-                                                                  '\$529,204',
+                                                                  '400',
                                                                   style: FlutterFlowTheme.of(
                                                                           context)
                                                                       .displayMedium,
@@ -807,7 +805,7 @@ class _MainDashboardWidgetState extends State<MainDashboardWidget> {
                                                                 children: [
                                                                   Icon(
                                                                     Icons
-                                                                        .add_task_rounded,
+                                                                        .sports_tennis,
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .info,
@@ -824,7 +822,7 @@ class _MainDashboardWidgetState extends State<MainDashboardWidget> {
                                                                           0.0),
                                                                       child:
                                                                           Text(
-                                                                        'check.io',
+                                                                        'PlayerName',
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .headlineMedium
                                                                             .override(
@@ -857,7 +855,7 @@ class _MainDashboardWidgetState extends State<MainDashboardWidget> {
                                                                           .end,
                                                                   children: [
                                                                     Text(
-                                                                      '•••• 4212',
+                                                                      '18-578-897',
                                                                       style: FlutterFlowTheme.of(
                                                                               context)
                                                                           .headlineMedium
@@ -868,21 +866,27 @@ class _MainDashboardWidgetState extends State<MainDashboardWidget> {
                                                                                 FlutterFlowTheme.of(context).info,
                                                                           ),
                                                                     ),
-                                                                    Image.asset(
-                                                                      'assets/images/card_chip@3x.png',
-                                                                      width:
-                                                                          44.0,
-                                                                      height:
-                                                                          32.0,
-                                                                      fit: BoxFit
-                                                                          .cover,
+                                                                    ClipRRect(
+                                                                      borderRadius:
+                                                                          BorderRadius.circular(
+                                                                              10.0),
+                                                                      child: Image
+                                                                          .asset(
+                                                                        'assets/images/_8a9a251a-0b11-4e71-973f-aa0b68b6a5ee.jpeg',
+                                                                        width:
+                                                                            59.0,
+                                                                        height:
+                                                                            60.0,
+                                                                        fit: BoxFit
+                                                                            .cover,
+                                                                      ),
                                                                     ),
                                                                   ],
                                                                 ),
                                                               ),
                                                             ),
                                                             Text(
-                                                              'Full Coverage || 07/26',
+                                                              'Rank 18 | Expiry 07/26',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium
@@ -897,136 +901,6 @@ class _MainDashboardWidgetState extends State<MainDashboardWidget> {
                                                           ],
                                                         ),
                                                       ),
-                                                    ),
-                                                  ),
-                                                  Padding(
-                                                    padding:
-                                                        EdgeInsetsDirectional
-                                                            .fromSTEB(
-                                                                16.0,
-                                                                16.0,
-                                                                16.0,
-                                                                16.0),
-                                                    child: Column(
-                                                      mainAxisSize:
-                                                          MainAxisSize.min,
-                                                      crossAxisAlignment:
-                                                          CrossAxisAlignment
-                                                              .start,
-                                                      children: [
-                                                        Padding(
-                                                          padding:
-                                                              EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      0.0,
-                                                                      4.0,
-                                                                      0.0,
-                                                                      8.0),
-                                                          child: Text(
-                                                            'Next Bill',
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .labelMedium,
-                                                          ),
-                                                        ),
-                                                        Text(
-                                                          '\$421.25',
-                                                          style: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .displaySmall,
-                                                        ),
-                                                        Padding(
-                                                          padding:
-                                                              EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      0.0,
-                                                                      4.0,
-                                                                      0.0,
-                                                                      8.0),
-                                                          child: Text(
-                                                            'Monday, May 18th',
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .labelMedium,
-                                                          ),
-                                                        ),
-                                                        Row(
-                                                          mainAxisSize:
-                                                              MainAxisSize.min,
-                                                          children: [
-                                                            Padding(
-                                                              padding:
-                                                                  EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          0.0,
-                                                                          4.0,
-                                                                          8.0,
-                                                                          8.0),
-                                                              child: Text(
-                                                                'Dependents: ',
-                                                                style: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelMedium,
-                                                              ),
-                                                            ),
-                                                            Padding(
-                                                              padding:
-                                                                  EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          0.0,
-                                                                          4.0,
-                                                                          0.0,
-                                                                          8.0),
-                                                              child: Text(
-                                                                'Wife, Child (2)',
-                                                                style: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMedium,
-                                                              ),
-                                                            ),
-                                                          ],
-                                                        ),
-                                                        Column(
-                                                          mainAxisSize:
-                                                              MainAxisSize.max,
-                                                          crossAxisAlignment:
-                                                              CrossAxisAlignment
-                                                                  .start,
-                                                          children: [
-                                                            Padding(
-                                                              padding:
-                                                                  EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          0.0,
-                                                                          4.0,
-                                                                          8.0,
-                                                                          0.0),
-                                                              child: Text(
-                                                                'Additional Services',
-                                                                style: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelMedium,
-                                                              ),
-                                                            ),
-                                                            Padding(
-                                                              padding:
-                                                                  EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          0.0,
-                                                                          4.0,
-                                                                          0.0,
-                                                                          8.0),
-                                                              child:
-                                                                  AutoSizeText(
-                                                                'Vision Coverage, Accidental',
-                                                                style: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMedium,
-                                                              ),
-                                                            ),
-                                                          ],
-                                                        ),
-                                                      ],
                                                     ),
                                                   ),
                                                 ],
@@ -2920,7 +2794,7 @@ class _MainDashboardWidgetState extends State<MainDashboardWidget> {
                                                                     12.0,
                                                                     0.0),
                                                         child: Text(
-                                                          'Card Header',
+                                                          'Coming Challenges',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .headlineMedium,
@@ -2935,57 +2809,13 @@ class _MainDashboardWidgetState extends State<MainDashboardWidget> {
                                                                     12.0,
                                                                     0.0),
                                                         child: Text(
-                                                          'Create tables and ui elements that work below.',
+                                                          'Here you can find you next challenges',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .labelMedium,
                                                         ),
                                                       ),
                                                     ],
-                                                  ),
-                                                ),
-                                                FFButtonWidget(
-                                                  onPressed: () {
-                                                    print('Button pressed ...');
-                                                  },
-                                                  text: 'Add New',
-                                                  icon: Icon(
-                                                    Icons.add_rounded,
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .info,
-                                                    size: 15.0,
-                                                  ),
-                                                  options: FFButtonOptions(
-                                                    height: 40.0,
-                                                    padding:
-                                                        EdgeInsetsDirectional
-                                                            .fromSTEB(16.0, 0.0,
-                                                                16.0, 0.0),
-                                                    iconPadding:
-                                                        EdgeInsetsDirectional
-                                                            .fromSTEB(0.0, 0.0,
-                                                                0.0, 0.0),
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primary,
-                                                    textStyle:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .titleSmall
-                                                            .override(
-                                                              fontFamily:
-                                                                  'Plus Jakarta Sans',
-                                                              fontSize: 14.0,
-                                                            ),
-                                                    elevation: 2.0,
-                                                    borderSide: BorderSide(
-                                                      color: Colors.transparent,
-                                                      width: 1.0,
-                                                    ),
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            8.0),
                                                   ),
                                                 ),
                                               ],
@@ -3038,7 +2868,7 @@ class _MainDashboardWidgetState extends State<MainDashboardWidget> {
                                                       Expanded(
                                                         flex: 4,
                                                         child: Text(
-                                                          'Assigned User',
+                                                          'Assigned Player',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .labelSmall,
@@ -3060,7 +2890,7 @@ class _MainDashboardWidgetState extends State<MainDashboardWidget> {
                                                       Expanded(
                                                         flex: 2,
                                                         child: Text(
-                                                          'Status',
+                                                          'Rank',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .labelSmall,
@@ -3069,7 +2899,7 @@ class _MainDashboardWidgetState extends State<MainDashboardWidget> {
                                                       Expanded(
                                                         flex: 1,
                                                         child: Text(
-                                                          'Actions',
+                                                          'Action',
                                                           textAlign:
                                                               TextAlign.end,
                                                           style: FlutterFlowTheme
