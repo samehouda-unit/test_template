@@ -201,13 +201,8 @@ class _MainProfileWidgetState extends State<MainProfileWidget>
                                                   borderRadius:
                                                       BorderRadius.circular(
                                                           8.0),
-                                                  child: CachedNetworkImage(
-                                                    fadeInDuration: Duration(
-                                                        milliseconds: 500),
-                                                    fadeOutDuration: Duration(
-                                                        milliseconds: 500),
-                                                    imageUrl:
-                                                        'https://images.unsplash.com/photo-1624561172888-ac93c696e10c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjJ8fHVzZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
+                                                  child: Image.asset(
+                                                    'assets/images/_8a9a251a-0b11-4e71-973f-aa0b68b6a5ee.jpeg',
                                                     width: 44.0,
                                                     height: 44.0,
                                                     fit: BoxFit.cover,
@@ -227,7 +222,7 @@ class _MainProfileWidgetState extends State<MainProfileWidget>
                                                       CrossAxisAlignment.start,
                                                   children: [
                                                     Text(
-                                                      'Casper Ghost',
+                                                      'Sameh Ouda',
                                                       style:
                                                           FlutterFlowTheme.of(
                                                                   context)
@@ -242,7 +237,7 @@ class _MainProfileWidgetState extends State<MainProfileWidget>
                                                                   0.0,
                                                                   0.0),
                                                       child: Text(
-                                                        'casper@ghustbusters.com',
+                                                        'samehoudaunit@gmail.com',
                                                         style:
                                                             FlutterFlowTheme.of(
                                                                     context)
