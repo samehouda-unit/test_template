@@ -113,7 +113,7 @@ class _MainDashboardWidgetState extends State<MainDashboardWidget> {
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       2.0, 0.0, 0.0, 0.0),
                                   child: Text(
-                                    'PlayerName',
+                                    'Sameh Ouda',
                                     style: FlutterFlowTheme.of(context)
                                         .headlineMedium
                                         .override(
