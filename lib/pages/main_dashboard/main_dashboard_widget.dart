@@ -811,26 +811,26 @@ class _MainDashboardWidgetState extends State<MainDashboardWidget> {
                                                                         .info,
                                                                     size: 32.0,
                                                                   ),
-                                                                  if (FFAppState()
-                                                                          .navOpen ==
-                                                                      true)
-                                                                    Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                                                          12.0,
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0),
-                                                                      child:
-                                                                          Text(
-                                                                        'PlayerName',
-                                                                        style: FlutterFlowTheme.of(context)
-                                                                            .headlineMedium
-                                                                            .override(
-                                                                              fontFamily: 'Outfit',
-                                                                              color: FlutterFlowTheme.of(context).info,
-                                                                            ),
-                                                                      ),
+                                                                  Padding(
+                                                                    padding: EdgeInsetsDirectional
+                                                                        .fromSTEB(
+                                                                            12.0,
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0),
+                                                                    child: Text(
+                                                                      'Sameh Ouda',
+                                                                      style: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .headlineMedium
+                                                                          .override(
+                                                                            fontFamily:
+                                                                                'Outfit',
+                                                                            color:
+                                                                                FlutterFlowTheme.of(context).info,
+                                                                          ),
                                                                     ),
+                                                                  ),
                                                                 ],
                                                               ),
                                                             ),
