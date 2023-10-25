@@ -886,7 +886,7 @@ class _MainDashboardWidgetState extends State<MainDashboardWidget> {
                                                               ),
                                                             ),
                                                             Text(
-                                                              'Rank 18 | Expiry 07/26',
+                                                              'Rank  8th',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium
@@ -4555,6 +4555,354 @@ class _MainDashboardWidgetState extends State<MainDashboardWidget> {
                                       ),
                                     ),
                                   ),
+                                Align(
+                                  alignment: AlignmentDirectional(0.00, 0.00),
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        10.0, 14.0, 10.0, 0.0),
+                                    child: Text(
+                                      'News',
+                                      textAlign: TextAlign.start,
+                                      style: FlutterFlowTheme.of(context)
+                                          .displayMedium,
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      16.0, 12.0, 16.0, 0.0),
+                                  child: Container(
+                                    width: double.infinity,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(8.0),
+                                    ),
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Container(
+                                          height: 160.0,
+                                          child: Stack(
+                                            alignment:
+                                                AlignmentDirectional(0.0, 1.0),
+                                            children: [
+                                              Align(
+                                                alignment: AlignmentDirectional(
+                                                    0.00, -1.00),
+                                                child: ClipRRect(
+                                                  borderRadius:
+                                                      BorderRadius.only(
+                                                    bottomLeft:
+                                                        Radius.circular(0.0),
+                                                    bottomRight:
+                                                        Radius.circular(0.0),
+                                                    topLeft:
+                                                        Radius.circular(8.0),
+                                                    topRight:
+                                                        Radius.circular(8.0),
+                                                  ),
+                                                  child: Image.asset(
+                                                    'assets/images/_60a1cf43-d5db-434a-b724-c64c5181da0b.jpeg',
+                                                    width: double.infinity,
+                                                    height: 305.0,
+                                                    fit: BoxFit.cover,
+                                                  ),
+                                                ),
+                                              ),
+                                              Align(
+                                                alignment: AlignmentDirectional(
+                                                    0.00, 1.00),
+                                                child: Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          16.0, 0.0, 24.0, 0.0),
+                                                  child: Row(
+                                                    mainAxisSize:
+                                                        MainAxisSize.max,
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment
+                                                            .spaceBetween,
+                                                    crossAxisAlignment:
+                                                        CrossAxisAlignment.end,
+                                                    children: [
+                                                      Row(
+                                                        mainAxisSize:
+                                                            MainAxisSize.max,
+                                                        children: [
+                                                          Icon(
+                                                            Icons
+                                                                .grid_on_rounded,
+                                                            color: Color(
+                                                                0xFF39D2C0),
+                                                            size: 24.0,
+                                                          ),
+                                                          Padding(
+                                                            padding:
+                                                                EdgeInsetsDirectional
+                                                                    .fromSTEB(
+                                                                        8.0,
+                                                                        0.0,
+                                                                        0.0,
+                                                                        0.0),
+                                                            child: Text(
+                                                              'World News',
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .bodyMedium
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        'Plus Jakarta Sans',
+                                                                    color: Color(
+                                                                        0xFF39D2C0),
+                                                                    fontSize:
+                                                                        14.0,
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .normal,
+                                                                  ),
+                                                            ),
+                                                          ),
+                                                        ],
+                                                      ),
+                                                      Padding(
+                                                        padding:
+                                                            EdgeInsetsDirectional
+                                                                .fromSTEB(
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    12.0),
+                                                        child: Container(
+                                                          width: 40.0,
+                                                          height: 40.0,
+                                                          decoration:
+                                                              BoxDecoration(
+                                                            gradient:
+                                                                LinearGradient(
+                                                              colors: [
+                                                                Color(
+                                                                    0xFF4B39EF),
+                                                                Color(
+                                                                    0xFF39D2C0),
+                                                                Color(
+                                                                    0xFFE0E3E7)
+                                                              ],
+                                                              stops: [
+                                                                0.0,
+                                                                0.3,
+                                                                1.0
+                                                              ],
+                                                              begin:
+                                                                  AlignmentDirectional(
+                                                                      1.0,
+                                                                      0.98),
+                                                              end:
+                                                                  AlignmentDirectional(
+                                                                      -1.0,
+                                                                      -0.98),
+                                                            ),
+                                                            shape:
+                                                                BoxShape.circle,
+                                                          ),
+                                                          child: Padding(
+                                                            padding:
+                                                                EdgeInsetsDirectional
+                                                                    .fromSTEB(
+                                                                        2.0,
+                                                                        2.0,
+                                                                        2.0,
+                                                                        2.0),
+                                                            child: Container(
+                                                              width: 40.0,
+                                                              height: 40.0,
+                                                              decoration:
+                                                                  BoxDecoration(
+                                                                color: Colors
+                                                                    .white,
+                                                                shape: BoxShape
+                                                                    .circle,
+                                                              ),
+                                                              child: Icon(
+                                                                Icons
+                                                                    .chevron_right_rounded,
+                                                                color: Color(
+                                                                    0xFF14181B),
+                                                                size: 32.0,
+                                                              ),
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  16.0, 8.0, 0.0, 0.0),
+                                          child: Text(
+                                            'Cairo Tournament',
+                                            style: FlutterFlowTheme.of(context)
+                                                .titleLarge
+                                                .override(
+                                                  fontFamily: 'Outfit',
+                                                  color: Color(0xFF14181B),
+                                                  fontSize: 22.0,
+                                                  fontWeight: FontWeight.w500,
+                                                ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  16.0, 4.0, 16.0, 0.0),
+                                          child: Text(
+                                            'Squash Cairo Tournament starts on January 2024',
+                                            style: FlutterFlowTheme.of(context)
+                                                .labelMedium
+                                                .override(
+                                                  fontFamily:
+                                                      'Plus Jakarta Sans',
+                                                  color: Color(0xFF57636C),
+                                                  fontSize: 14.0,
+                                                  fontWeight: FontWeight.w500,
+                                                ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  16.0, 4.0, 16.0, 12.0),
+                                          child: Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            children: [
+                                              Card(
+                                                clipBehavior:
+                                                    Clip.antiAliasWithSaveLayer,
+                                                color: Color(0xFF4B39EF),
+                                                shape: RoundedRectangleBorder(
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          40.0),
+                                                ),
+                                                child: Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          2.0, 2.0, 2.0, 2.0),
+                                                  child: ClipRRect(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            40.0),
+                                                    child: Image.network(
+                                                      'https://images.unsplash.com/photo-1620577438168-b2079ab90f86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBvY3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60',
+                                                      width: 20.0,
+                                                      height: 20.0,
+                                                      fit: BoxFit.cover,
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                              Card(
+                                                clipBehavior:
+                                                    Clip.antiAliasWithSaveLayer,
+                                                color: Color(0xFF39D2C0),
+                                                shape: RoundedRectangleBorder(
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          40.0),
+                                                ),
+                                                child: Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          2.0, 2.0, 2.0, 2.0),
+                                                  child: ClipRRect(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            40.0),
+                                                    child: Image.network(
+                                                      'https://images.unsplash.com/photo-1620577438168-b2079ab90f86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBvY3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60',
+                                                      width: 20.0,
+                                                      height: 20.0,
+                                                      fit: BoxFit.cover,
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                              Card(
+                                                clipBehavior:
+                                                    Clip.antiAliasWithSaveLayer,
+                                                color: Color(0xFFE0E3E7),
+                                                shape: RoundedRectangleBorder(
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          40.0),
+                                                ),
+                                                child: Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          2.0, 2.0, 2.0, 2.0),
+                                                  child: ClipRRect(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            40.0),
+                                                    child: Image.network(
+                                                      'https://images.unsplash.com/photo-1620577438168-b2079ab90f86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBvY3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60',
+                                                      width: 20.0,
+                                                      height: 20.0,
+                                                      fit: BoxFit.cover,
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                              Text(
+                                                '16 friends played',
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelMedium
+                                                        .override(
+                                                          fontFamily:
+                                                              'Plus Jakarta Sans',
+                                                          color:
+                                                              Color(0xFF57636C),
+                                                          fontSize: 14.0,
+                                                          fontWeight:
+                                                              FontWeight.w500,
+                                                        ),
+                                              ),
+                                              Expanded(
+                                                child: Text(
+                                                  'View related topics',
+                                                  textAlign: TextAlign.end,
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily:
+                                                            'Plus Jakarta Sans',
+                                                        color:
+                                                            Color(0xFF4B39EF),
+                                                        fontSize: 12.0,
+                                                        fontWeight:
+                                                            FontWeight.normal,
+                                                        decoration:
+                                                            TextDecoration
+                                                                .underline,
+                                                      ),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
                               ].addToEnd(SizedBox(height: 24.0)),
                             ),
                           ),
