@@ -397,7 +397,8 @@ class _CreatePlayerPageWidgetState extends State<CreatePlayerPageWidget> {
                         'Age 15',
                         'Age 16'
                       ],
-                      onChanged: null,
+                      onChanged: (val) =>
+                          setState(() => _model.lstStagesValue = val),
                       width: double.infinity,
                       height: 56.0,
                       textStyle: FlutterFlowTheme.of(context).bodyMedium,
@@ -416,10 +417,8 @@ class _CreatePlayerPageWidgetState extends State<CreatePlayerPageWidget> {
                       margin:
                           EdgeInsetsDirectional.fromSTEB(20.0, 4.0, 12.0, 4.0),
                       hidesUnderline: true,
-                      isSearchable: false,
-                      isMultiSelect: true,
-                      onChangedForMultiSelect: (val) =>
-                          setState(() => _model.lstStagesValue = val),
+                      isSearchable: true,
+                      isMultiSelect: false,
                     ),
                   ),
                   Padding(

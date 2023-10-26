@@ -48,7 +48,7 @@ class CreatePlayerPageModel extends FlutterFlowModel<CreatePlayerPageWidget> {
   }
 
   // State field(s) for lstStages widget.
-  List<String>? lstStagesValue;
+  String? lstStagesValue;
   FormFieldController<String>? lstStagesValueController;
   // State field(s) for txtDateOfBirth widget.
   FocusNode? txtDateOfBirthFocusNode;
