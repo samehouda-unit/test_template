@@ -581,9 +581,6 @@ class _CreatePlayerPageWidgetState extends State<CreatePlayerPageWidget> {
                         !_model.formKey.currentState!.validate()) {
                       return;
                     }
-                    if (_model.lstStagesValue == null) {
-                      return;
-                    }
                     _model.apiResultp5y = await SquashManagementAPIGroupGroup
                         .createPlayerAPICall
                         .call(
