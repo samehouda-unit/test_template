@@ -232,7 +232,7 @@ class _CreatePlayerPageWidgetState extends State<CreatePlayerPageWidget> {
             ),
             Form(
               key: _model.formKey,
-              autovalidateMode: AutovalidateMode.always,
+              autovalidateMode: AutovalidateMode.disabled,
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [
