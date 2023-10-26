@@ -1,3 +1,4 @@
+import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_drop_down.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -572,10 +573,60 @@ class _CreatePlayerPageWidgetState extends State<CreatePlayerPageWidget> {
               child: Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
                 child: FFButtonWidget(
-                  onPressed: () {
-                    print('Button pressed ...');
+                  onPressed: () async {
+                    if (_model.formKey.currentState == null ||
+                        !_model.formKey.currentState!.validate()) {
+                      return;
+                    }
+                    if (_model.lstStagesValue == null) {
+                      return;
+                    }
+                    _model.apiResultp5y = await SquashManagementAPIGroupGroup
+                        .createPlayerAPICall
+                        .call(
+                      name: _model.txtPlayerNameController.text,
+                    );
+                    if ((_model.apiResultp5y?.succeeded ?? true)) {
+                      await showDialog(
+                        context: context,
+                        builder: (alertDialogContext) {
+                          return AlertDialog(
+                            content: Text('Player has been added successfully'),
+                            actions: [
+                              TextButton(
+                                onPressed: () =>
+                                    Navigator.pop(alertDialogContext),
+                                child: Text('Ok'),
+                              ),
+                            ],
+                          );
+                        },
+                      );
+                    } else {
+                      await showDialog(
+                        context: context,
+                        builder: (alertDialogContext) {
+                          return AlertDialog(
+                            content: Text('Error while addeding Player'),
+                            actions: [
+                              TextButton(
+                                onPressed: () =>
+                                    Navigator.pop(alertDialogContext),
+                                child: Text('Ok'),
+                              ),
+                            ],
+                          );
+                        },
+                      );
+                    }
+
+                    setState(() {});
                   },
-                  text: 'Save Changes',
+                  text: 'Submit',
+                  icon: Icon(
+                    Icons.add_moderator,
+                    size: 15.0,
+                  ),
                   options: FFButtonOptions(
                     width: 270.0,
                     height: 50.0,
@@ -594,6 +645,11 @@ class _CreatePlayerPageWidgetState extends State<CreatePlayerPageWidget> {
                       width: 1.0,
                     ),
                     borderRadius: BorderRadius.circular(12.0),
+                    hoverColor: FlutterFlowTheme.of(context).secondary,
+                    hoverBorderSide: BorderSide(
+                      color: FlutterFlowTheme.of(context).primary,
+                      width: 1.0,
+                    ),
                   ),
                 ),
               ),

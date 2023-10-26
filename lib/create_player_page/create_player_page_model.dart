@@ -1,3 +1,4 @@
+import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_drop_down.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -26,10 +27,26 @@ class CreatePlayerPageModel extends FlutterFlowModel<CreatePlayerPageWidget> {
   FocusNode? txtPlayerNameFocusNode;
   TextEditingController? txtPlayerNameController;
   String? Function(BuildContext, String?)? txtPlayerNameControllerValidator;
+  String? _txtPlayerNameControllerValidator(BuildContext context, String? val) {
+    if (val == null || val.isEmpty) {
+      return 'Field is required';
+    }
+
+    return null;
+  }
+
   // State field(s) for txtRank widget.
   FocusNode? txtRankFocusNode;
   TextEditingController? txtRankController;
   String? Function(BuildContext, String?)? txtRankControllerValidator;
+  String? _txtRankControllerValidator(BuildContext context, String? val) {
+    if (val == null || val.isEmpty) {
+      return 'Field is required';
+    }
+
+    return null;
+  }
+
   // State field(s) for lstStages widget.
   List<String>? lstStagesValue;
   FormFieldController<String>? lstStagesValueController;
@@ -38,14 +55,29 @@ class CreatePlayerPageModel extends FlutterFlowModel<CreatePlayerPageWidget> {
   TextEditingController? txtDateOfBirthController;
   final txtDateOfBirthMask = MaskTextInputFormatter(mask: '##/##/####');
   String? Function(BuildContext, String?)? txtDateOfBirthControllerValidator;
+  String? _txtDateOfBirthControllerValidator(
+      BuildContext context, String? val) {
+    if (val == null || val.isEmpty) {
+      return 'Field is required';
+    }
+
+    return null;
+  }
+
   // State field(s) for txtPlayerBio widget.
   FocusNode? txtPlayerBioFocusNode;
   TextEditingController? txtPlayerBioController;
   String? Function(BuildContext, String?)? txtPlayerBioControllerValidator;
+  // Stores action output result for [Backend Call - API (createPlayerAPI)] action in Button widget.
+  ApiCallResponse? apiResultp5y;
 
   /// Initialization and disposal methods.
 
-  void initState(BuildContext context) {}
+  void initState(BuildContext context) {
+    txtPlayerNameControllerValidator = _txtPlayerNameControllerValidator;
+    txtRankControllerValidator = _txtRankControllerValidator;
+    txtDateOfBirthControllerValidator = _txtDateOfBirthControllerValidator;
+  }
 
   void dispose() {
     txtPlayerNameFocusNode?.dispose();
