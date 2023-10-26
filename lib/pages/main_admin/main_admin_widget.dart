@@ -228,7 +228,7 @@ class _MainAdminWidgetState extends State<MainAdminWidget> {
                                                                           4.0,
                                                                           0.0),
                                                                   child: Text(
-                                                                    '2300',
+                                                                    '230',
                                                                     style: FlutterFlowTheme.of(
                                                                             context)
                                                                         .displaySmall,
