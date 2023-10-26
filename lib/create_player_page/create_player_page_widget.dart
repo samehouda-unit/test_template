@@ -381,9 +381,11 @@ class _CreatePlayerPageWidgetState extends State<CreatePlayerPageWidget> {
                     child: FlutterFlowDropDown<String>(
                       controller: _model.lstStagesValueController ??=
                           FormFieldController<String>(
-                        _model.lstStagesValue ??= 'Stage',
+                        _model.lstStagesValue ??= '',
                       ),
-                      options: [
+                      options: List<String>.from(
+                          ['', '1', '2', '3', '4', '5', '6', '7', '8', '9']),
+                      optionLabels: [
                         'Stage',
                         'Age 8',
                         'Age 9',
@@ -414,7 +416,7 @@ class _CreatePlayerPageWidgetState extends State<CreatePlayerPageWidget> {
                       margin:
                           EdgeInsetsDirectional.fromSTEB(20.0, 4.0, 12.0, 4.0),
                       hidesUnderline: true,
-                      isSearchable: true,
+                      isSearchable: false,
                       isMultiSelect: true,
                       onChangedForMultiSelect: (val) =>
                           setState(() => _model.lstStagesValue = val),
