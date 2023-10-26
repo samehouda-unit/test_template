@@ -107,15 +107,11 @@ class CreateTournamentAPICall {
 
 class CreatePlayerAPICall {
   Future<ApiCallResponse> call({
-    String? name = '',
-    String? rank = '',
-    int? stage,
+    String? playerName = '',
   }) async {
     final ffApiRequestBody = '''
 {
-"name": "name",
-"rank": "rank",
-"stage":"stage"
+"name":"${playerName}"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'createPlayerAPI',

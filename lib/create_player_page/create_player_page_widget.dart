@@ -401,8 +401,10 @@ class _CreatePlayerPageWidgetState extends State<CreatePlayerPageWidget> {
                           setState(() => _model.lstStagesValue = val),
                       width: double.infinity,
                       height: 56.0,
+                      searchHintTextStyle: TextStyle(),
                       textStyle: FlutterFlowTheme.of(context).bodyMedium,
                       hintText: 'Player Stage',
+                      searchHintText: 'Stage',
                       icon: Icon(
                         Icons.keyboard_arrow_down_rounded,
                         color: FlutterFlowTheme.of(context).secondaryText,
@@ -585,7 +587,7 @@ class _CreatePlayerPageWidgetState extends State<CreatePlayerPageWidget> {
                     _model.apiResultp5y = await SquashManagementAPIGroupGroup
                         .createPlayerAPICall
                         .call(
-                      name: _model.txtPlayerNameController.text,
+                      playerName: _model.txtPlayerNameController.text,
                     );
                     if ((_model.apiResultp5y?.succeeded ?? true)) {
                       await showDialog(
@@ -608,7 +610,7 @@ class _CreatePlayerPageWidgetState extends State<CreatePlayerPageWidget> {
                         context: context,
                         builder: (alertDialogContext) {
                           return AlertDialog(
-                            content: Text('Error while addeding Player'),
+                            content: Text('Error while adding Player'),
                             actions: [
                               TextButton(
                                 onPressed: () =>
